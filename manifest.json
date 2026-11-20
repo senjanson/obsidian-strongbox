@@ -1,0 +1,10 @@
+{
+  "id": "strongbox",
+  "name": "Strongbox",
+  "version": "0.1.0",
+  "minAppVersion": "1.7.2",
+  "description": "Keep selected text, files with their attachments, folders or the whole vault encrypted on disk (AES-256-GCM, Argon2id or PBKDF2). Plaintext lives only in memory while unlocked.",
+  "author": "senjanson",
+  "authorUrl": "https://github.com/senjanson",
+  "isDesktopOnly": false
+}

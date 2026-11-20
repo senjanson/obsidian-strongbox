@@ -1,0 +1,171 @@
+/* Strongbox */
+
+.strongbox-hidden {
+  display: none !important;
+}
+
+.strongbox-muted {
+  color: var(--text-muted);
+}
+
+.strongbox-small {
+  font-size: var(--font-ui-smaller);
+}
+
+.strongbox-error {
+  color: var(--text-error);
+  min-height: 1.2em;
+  margin: 4px 0;
+}
+
+/* ---- dialogs */
+
+.strongbox-modal .setting-item {
+  border-top: none;
+}
+
+.strongbox-wizard {
+  max-width: 560px;
+}
+
+.strongbox-warning {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: var(--radius-s);
+  background: var(--background-modifier-hover);
+  border-left: 3px solid var(--color-orange);
+  line-height: 1.45;
+}
+
+.strongbox-warning-strong {
+  border-left-color: var(--color-red);
+  background: rgba(var(--color-red-rgb), 0.08);
+  font-weight: var(--font-semibold);
+}
+
+.strongbox-warning-icon {
+  flex: none;
+  color: var(--color-orange);
+  margin-top: 2px;
+}
+
+.strongbox-warning-strong .strongbox-warning-icon {
+  color: var(--color-red);
+}
+
+.strongbox-password {
+  font-family: var(--font-monospace);
+}
+
+.strongbox-progress {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--background-modifier-border);
+  overflow: hidden;
+  margin: 12px 0 8px;
+}
+
+.strongbox-progress-bar {
+  height: 100%;
+  width: 0;
+  background: var(--interactive-accent);
+  transition: width 120ms linear;
+}
+
+.strongbox-progress-current {
+  min-height: 1.2em;
+  word-break: break-all;
+}
+
+.strongbox-inline-plain {
+  width: 100%;
+  font-family: var(--font-text);
+  resize: vertical;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* ---- inline encrypted blocks */
+
+.strongbox-inline-lock {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 6px;
+  border-radius: var(--radius-s);
+  background: var(--background-modifier-hover);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  font-size: 0.85em;
+  line-height: 1.6;
+  cursor: pointer;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.strongbox-inline-lock:hover,
+.strongbox-inline-lock:focus-visible {
+  color: var(--text-normal);
+  border-color: var(--interactive-accent);
+}
+
+.strongbox-inline-lock-icon {
+  display: inline-flex;
+}
+
+.strongbox-inline-lock-icon svg {
+  width: 0.95em;
+  height: 0.95em;
+}
+
+/* ---- status bar */
+
+.strongbox-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.strongbox-status-icon {
+  display: inline-flex;
+}
+
+.strongbox-status-icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* ---- file explorer badge */
+
+.nav-file-title.strongbox-protected .nav-file-title-content::after,
+.nav-folder-title.strongbox-protected .nav-folder-title-content::after,
+.tree-item-self.strongbox-protected .tree-item-inner::after {
+  content: "🔒";
+  font-size: 0.75em;
+  margin-left: 4px;
+  opacity: 0.7;
+}
+
+/* ---- settings */
+
+.strongbox-settings .strongbox-attention .setting-item-description {
+  color: var(--text-error);
+}
+
+.strongbox-mapping {
+  max-height: 240px;
+  overflow: auto;
+  font-size: var(--font-ui-smaller);
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* ---- mobile: hide content from the app-switcher snapshot */
+
+body.strongbox-privacy-cover .app-container {
+  visibility: hidden;
+}

@@ -1,0 +1,38 @@
+{
+  "name": "obsidian-strongbox",
+  "version": "0.1.0",
+  "description": "Obsidian plugin that keeps notes, attachments, folders or the whole vault encrypted on disk (AES-256-GCM).",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "obsidian",
+    "encryption",
+    "aes-gcm",
+    "argon2id"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "hash-wasm": "^4.12.0"
+  },
+  "devDependencies": {
+    "@codemirror/state": "6.5.0",
+    "@codemirror/view": "6.38.6",
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.20.0",
+    "obsidian": "1.12.3",
+    "tslib": "^2.6.0",
+    "typescript": "~5.9.3",
+    "vitest": "^1.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senjanson/obsidian-strongbox.git"
+  },
+  "homepage": "https://github.com/senjanson/obsidian-strongbox"
+}

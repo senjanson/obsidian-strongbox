@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+main.js
+*.js.map
+dist/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# npm debug
+npm-debug.log*
+
+# Local plugin data (settings, keyring, journals when the folder is used as a test vault plugin dir)
+data/
+data.json
+keyring.json
